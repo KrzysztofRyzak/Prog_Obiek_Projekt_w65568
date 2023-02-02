@@ -79,6 +79,5 @@ public class OrderManager implements SimpleManager {
         Order order = new Order(Integer.parseInt(customerId), Integer.parseInt(productId), Integer.parseInt(quantity));
         orderDAO.createItem(order);
         System.out.println("Dodano zamówienie: " + order);
-
     }
 }

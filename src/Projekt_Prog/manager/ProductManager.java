@@ -73,6 +73,6 @@ public class ProductManager implements SimpleManager {
 
         Product product = new Product(name, Double.parseDouble(price));
         productDAO.createItem(product);
-        System.out.println("Dodano produkt: " + product);
+        System.out.println("Dodano produkt: " + product.getName());
     }
 }
